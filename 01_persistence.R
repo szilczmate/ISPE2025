@@ -2,12 +2,11 @@
 #ISPE 2025
 #Introduction to R Shiny for Pharmacoepidemiologists: Interactive Visualization in Real-World Evidence Studies
 
-# Install packages if they are not installed
-# install.packages("dplyr")
-# install.packages("lubridate")
-# install.packages("ggplot2")
-# install.packages("survival")
-# install.packages("survminer")
+# Ensure renv is installed and restore project environment
+if (!requireNamespace("renv", quietly = TRUE)) {
+  install.packages("renv")
+}
+renv::restore()
 
 #Load packages
 library(dplyr)
